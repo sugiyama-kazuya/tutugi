@@ -4,7 +4,19 @@
 * font
 ***********************************/
 
+// family
 $font-family: sans-serif;
+
+// size
+$font-size-xxs: 5rem;
+$font-size-xs: 5rem;
+$font-size-s: 5rem;
+$font-size-sm: 5rem;
+$font-size-m: 5rem;
+$font-size-l: 5rem;
+$font-size-ll: 5rem;
+$font-size-3l: 5rem;
+$font-size-xl: 5rem;
 
 /***********************************
 * color
@@ -29,3 +41,17 @@ $sub-bg-color: #fff;
 $pc-window-size: 1920px;
 $tablet-window-size: 785px;
 $sp-window-size: 390px;
+
+/***********************************
+* z-index
+***********************************/
+
+$z-index-xxs: -1;
+$z-index-xs: 1;
+$z-index-s: 10;
+$z-index-sm: 20;
+$z-index-m: 30;
+$z-index-l: 40;
+$z-index-ll: 50;
+$z-index-3l: 60;
+$z-index-xl: 70;
