@@ -33,7 +33,7 @@ function imgImagemin() {
 }
 
 function styles() {
-  return src("./src/sass/*.scss")
+  return src("./src/**/*.scss")
     .pipe(
       $.plumber({
         errorHandler: $.notify.onError("Error: <%= error.message %>"),
@@ -76,12 +76,12 @@ function scripts() {
 function startAppServer() {
   server.init({
     server: {
-      baseDir: "./dist",
+      baseDir: ".",
     },
   });
 
   watch("./src/**/*.scss", styles);
-  watch("./dist/*.html").on("change", server.reload);
+  watch("./*.html").on("change", server.reload);
   watch("./src/**/*.scss").on("change", server.reload);
 }
 const serve = series(parallel(styles, series(scripts)), startAppServer);
