@@ -39,6 +39,7 @@ function styles() {
         errorHandler: $.notify.onError("Error: <%= error.message %>"),
       })
     )
+    .pipe($.sassGlob())
     .pipe($.sass())
     .pipe($.postcss([autoprefixer()]))
     .pipe(dest("./dist/css"))
