@@ -7,8 +7,21 @@ const imageminMozjpeg = require("imagemin-mozjpeg");
 const imageminPngquant = require("imagemin-pngquant");
 const imageminSvgo = require("imagemin-svgo");
 
+const srcPath = {
+  css: "./src/scss/**/*.scss",
+  js: "./src/js/*.js",
+  img: "./src/images/*",
+  html: "./*.html",
+};
+
+const destPath = {
+  css: "./dist/css/",
+  js: "./dist/js",
+  img: "./dist/images",
+};
+
 function imgImagemin() {
-  return src("./src/images/*")
+  return src(srcPath.img)
     .pipe(
       $.imagemin(
         [
@@ -29,11 +42,11 @@ function imgImagemin() {
         }
       )
     )
-    .pipe(dest("./dist/images"));
+    .pipe(dest(destPath.img));
 }
 
 function styles() {
-  return src("./src/**/*.scss")
+  return src(srcPath.css)
     .pipe(
       $.plumber({
         errorHandler: $.notify.onError("Error: <%= error.message %>"),
@@ -42,18 +55,18 @@ function styles() {
     .pipe($.sassGlob())
     .pipe($.sass())
     .pipe($.postcss([autoprefixer()]))
-    .pipe(dest("./dist/css"))
+    .pipe(dest(destPath.css))
     .pipe($.cleanCss())
     .pipe(
       $.rename({
         extname: ".min.css",
       })
     )
-    .pipe(dest("dist/css/"));
+    .pipe(dest(destPath.css));
 }
 
 function scripts() {
-  return src("./src/js/*.js")
+  return src(srcPath.js)
     .pipe(
       $.plumber({
         errorHandler: $.notify.onError("Error: <%= error.message %>"),
@@ -64,14 +77,14 @@ function scripts() {
         presets: ["@babel/preset-env"],
       })
     )
-    .pipe(dest("./dist/js"))
+    .pipe(dest(destPath.js))
     .pipe($.uglify())
     .pipe(
       $.rename({
         extname: ".min.js",
       })
     )
-    .pipe(dest("./dist/js"));
+    .pipe(dest(destPath.js));
 }
 
 function startAppServer() {
@@ -81,10 +94,17 @@ function startAppServer() {
     },
   });
 
-  watch("./src/**/*.scss", styles);
-  watch("./*.html").on("change", server.reload);
-  watch("./src/**/*.scss").on("change", server.reload);
+  watch(srcPath.css, styles);
+  watch(srcPath.js, scripts);
+  watch(srcPath.html).on("change", server.reload);
+  watch(srcPath.css).on("change", server.reload);
 }
+
+function watchCss() {
+  watch(srcPath.css, styles);
+}
+
 const serve = series(parallel(styles, series(scripts)), startAppServer);
 exports.comp = imgImagemin;
 exports.serve = serve;
+exports.watch = watchCss;
