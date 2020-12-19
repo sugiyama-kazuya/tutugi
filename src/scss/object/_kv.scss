@@ -1,9 +1,154 @@
 @charset "UTF-8";
 
-/***********************************
-* break-point-tablet
-***********************************/
+.kv__background {
+  width: 100%;
+  height: 65rem;
+  position: relative;
+  background-color: #8f1818;
+}
 
-/***********************************
-* break-point-sp
-***********************************/
+.kv__imgs {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url(../images/kv-top-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 70%;
+}
+
+.kv__card {
+  position: absolute;
+  top: 199px;
+  background-color: #ffffff;
+  z-index: $z-index-s;
+
+  &-header {
+    color: #c51b0e;
+    font-size: 2.2rem;
+    font-size: clamp(2.2rem, convertVw(28, 1920), 2.8rem);
+    font-weight: bold;
+  }
+
+  &-header-wrapper {
+    padding: 1.8rem 1.8rem 1.8rem 1.6rem;
+    padding: clamp(1.8rem, convertVw(23, 1920), 2.3rem)
+      clamp(1.8rem, convertVw(24, 1920), 2.4rem)
+      clamp(1.8rem, convertVw(24, 1920), 2.4rem)
+      clamp(1.6rem, convertVw(20, 1920), 2rem);
+
+    border-bottom: 1px solid #c51b0e;
+    box-sizing: border-box;
+  }
+
+  &-header-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 1.6rem 0 1.8rem;
+    padding: clamp(1.6rem, convertVw(21, 1920), 2.1rem) 0
+      clamp(1.8rem, convertVw(23, 1920), 2.3rem);
+  }
+
+  &-bottom {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-size: clamp(1.8rem, convertVw(23, 1920), 2.3rem);
+  }
+
+  &-bottom-wrapper {
+    background-color: #111111;
+    padding: 1.6rem 2.5rem 1.6rem 2.2rem;
+  }
+}
+
+//--------------------------------------------------------
+// 1110px以下
+//--------------------------------------------------------
+
+@media screen and (max-width: $tablet-window-size) {
+  .kv__card-header {
+    font-size: 1.76rem;
+    font-size: clamp(1.32rem, convertVw(22, 1110), 2.5rem);
+  }
+
+  .kv__card-header-wrapper {
+    padding: 1.8rem 1.8rem 1.8rem 1.6rem;
+    padding: clamp(1.8rem, convertVw(18, 1110), 18px)
+      clamp(10.8px, convertVw(18, 1110), 18px)
+      clamp(10.8px, convertVw(18, 1110), 18px)
+      clamp(9.6px, convertVw(16, 1110), 16px);
+  }
+
+  .kv__card-header-logo {
+    width: 336px;
+    width: clamp(336px, convertVw(480, 1110), 480px);
+    height: auto;
+  }
+
+  .kv__card-bottom {
+    font-size: 1.08rem;
+    font-size: clamp(1.08rem, convertVw(18, 1110), 1.8rem);
+  }
+
+  .kv__card-header-logo-wrapper {
+    padding: clamp(9.6px, convertVw(16, 1110), 16px);
+  }
+
+  .kv__card-bottom-wrapper {
+    padding: 1.6rem 2.5rem 1.6rem 2.2rem;
+
+    padding: clamp(10.8px, convertVw(18, 1110), 18px)
+      clamp(10.8px, convertVw(18, 1110), 18px)
+      clamp(10.8px, convertVw(18, 1110), 18px)
+      clamp(9.6px, convertVw(16, 1110), 16px);
+  }
+}
+
+//--------------------------------------------------------
+// 768px以下
+//--------------------------------------------------------
+
+@media screen and (max-width: $sp-window-size) {
+  .kv__background {
+    height: 500px;
+  }
+
+  .kv__imgs {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url(../images/top-kv-sp.png);
+    width: 84%;
+  }
+
+  .kv__card {
+    width: 65%;
+  }
+
+  .kv__card-header-wrapper {
+    text-align: center;
+    padding: 8px 5px 5px 0;
+  }
+
+  .kv__card-header {
+    font-size: 8px;
+    font-size: clamp(8px, convertVw(14, 768), 14px);
+  }
+
+  .kv__card-bottom-wrapper {
+    text-align: center;
+  }
+
+  .kv__card-header-logo {
+    width: 235px;
+    width: clamp(100px, convertVw(336, 768), 336px);
+    height: auto;
+  }
+
+  .kv__card-bottom {
+    font-size: 10px;
+    font-size: clamp(10px, convertVw(18, 1110), 1.8rem);
+  }
+}

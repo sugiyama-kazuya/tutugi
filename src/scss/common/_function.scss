@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+@function convertVw($targetSize, $windowSize) {
+  @return ($targetSize / $windowSize * 100vw);
+}

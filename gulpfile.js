@@ -46,7 +46,7 @@ function imgImagemin() {
 }
 
 function styles() {
-  return src(srcPath.css)
+  return src("./src/scss/**/*.scss")
     .pipe(
       $.plumber({
         errorHandler: $.notify.onError("Error: <%= error.message %>"),
@@ -96,8 +96,8 @@ function startAppServer() {
 
   watch(srcPath.css, styles);
   watch(srcPath.js, scripts);
-  watch(srcPath.html).on("change", server.reload);
-  watch(srcPath.css).on("change", server.reload);
+  // watch(srcPath.html).on("change", server.reload);
+  // watch(srcPath.css).on("change", server.reload);
 }
 
 function watchCss() {
@@ -108,3 +108,4 @@ const serve = series(parallel(styles, series(scripts)), startAppServer);
 exports.comp = imgImagemin;
 exports.serve = serve;
 exports.watch = watchCss;
+exports.style = styles;
