@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 .use-image__title-logo {
-  object-fit: cover;
+  object-fit: contain;
+  height: auto;
 }
 
 .use-image {
@@ -62,6 +63,7 @@
     width: 190px;
     width: clamp(100px, convertVw(250, 1110), 281px);
     margin: 0 5px;
+    height: auto;
   }
 
   .use-image {
