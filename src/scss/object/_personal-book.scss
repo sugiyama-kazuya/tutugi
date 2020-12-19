@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+.personal-book__text-box {
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-top: 48px;
+}
+
+.personal-book__sub-title {
+  color: #3a9fad;
+  font-size: 30px;
+  font-size: clamp(30px, convertVw(37, 1920), 37px);
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+
+.personal-book__sub-title-decoration-first {
+  width: clamp(20px, convertVw(250, 1920), 250px);
+  height: 1px;
+  background-color: #3a9fad;
+  display: block;
+  transform: translateX(-7%);
+}
+.personal-book__sub-title-decoration-second {
+  width: clamp(20px, convertVw(250, 1920), 250px);
+  height: 1px;
+  background-color: #3a9fad;
+  display: block;
+  transform: translateX(7%);
+}
+
+.personal-book__sub-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.personal-book__text-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+.personal-book__text {
+  font-size: 14.5px;
+  font-size: clamp(14.5px, convertVw(18, 1920), 18px);
+  color: #1f1f1f;
+  line-height: 1.6;
+  text-align: center;
+
+  &:not(:last-of-type) {
+    margin-bottom: 35px;
+  }
+
+  &.-br:before {
+    content: "\A";
+    white-space: pre;
+  }
+}
+
+.personal-book__staff-list {
+  display: flex;
+  padding: 0 208px;
+  padding: 0 clamp(0, 100vw, 260px);
+
+  &-wrapper {
+    margin-top: 70px;
+  }
+}
+
+.personal-book__staff {
+  width: calc(100% / 9);
+
+  &:not(:last-of-type) {
+    margin-right: 1px;
+  }
+}
+
+.personal-book__staff-img {
+  width: 100%;
+  display: block;
+
+  &-wrapper {
+    width: 100%;
+  }
+}
+
+.personal-book__staff-img {
+  object-fit: contain;
+  height: auto;
+}
+
+//------------------------------------------
+//1500px以下
+//------------------------------------------
+
+// ※スタッフ一覧、横並び画像の左右の余白が1920pxの場合だとちょうど良いが、それ以上に狭めると画像の文字が小さくなり過ぎて画像の文言が読みにくくなる為、1500pxで左右の余白を30pxほどに変更。
+@media screen and (max-width: 1500px) {
+  .personal-book__staff-list {
+    padding: 0 clamp(20px, convertVw(30, 1500), 30px);
+  }
+}
+
+@media screen and (max-width: $tablet-window-size) {
+  .personal-book__text-wrapper {
+    padding: 0 10px;
+  }
+
+  .personal-book__sub-title {
+    font-size: 21px;
+    font-size: clamp(15px, convertVw(30, 1110), 30px);
+  }
+
+  .personal-book__text {
+    font-size: 12px;
+    font-size: clamp(12px, convertVw(14.5, 1110), 14.5px);
+    line-height: 1.4;
+
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: $sp-window-size) {
+  .personal-book__staff-list {
+    flex-wrap: wrap;
+    padding: 0 5px;
+  }
+
+  .personal-book__staff {
+    width: calc(100% / 5 - 1px);
+  }
+
+  .personal-book__staff-list-wrapper {
+    margin-top: 40px;
+  }
+
+  .personal-book__text-box {
+    margin-top: 40px;
+  }
+}

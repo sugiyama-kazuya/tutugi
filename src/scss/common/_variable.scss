@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/***********************************
+* font
+***********************************/
+
+@font-face {
+  font-family: "SourceHanCodeJP-Regular";
+  src: url("../fonts/SourceHanSans-Regular.otf") format("otf");
+}
+@font-face {
+  font-family: "SourceHanCodeJP-Bold";
+  src: url("../fonts/SourceHanSans-Bold.otf") format("otf");
+}
+@font-face {
+  font-family: "SourceHanCodeJP-Heavy";
+  src: url("../fonts/SourceHanSans-Heavy.otf") format("otf");
+}
+@font-face {
+  font-family: "CenturyGothic";
+  src: url("../fonts/Century Gothic.ttf") format("truetype");
+}
+
+/***********************************
+* break-point
+***********************************/
+
+$pc-window-size: 1920px;
+$tablet-window-size: 1110px;
+$sp-window-size: 768px;
+
+/***********************************
+* z-index
+***********************************/
+
+$z-index-xxs: -1;
+$z-index-xs: 1;
+$z-index-s: 10;
+$z-index-sm: 20; //sp-nav-menuで使用
+$z-index-m: 30; //download__content-boxで使用
+$z-index-l: 40;
+$z-index-ll: 50; //side-tagで使用
+$z-index-3l: 60; //sp-nav-menuで使用
+$z-index-4l: 65;
+$z-index-xl: 70; //burger-btnで使用
+$z-index-xx: 80; // headerに使用
+
+/***********************************
+* animation
+***********************************/
+
+@keyframes popup {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popdown {
+  0% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

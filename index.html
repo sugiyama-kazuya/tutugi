@@ -11,10 +11,1244 @@
     <title></title>
   </head>
   <body>
-    <header class="header">そうなんや</header>
-    <main></main>
-    <footer></footer>
+    <!-- ヘッダー -->
+    <header id="js-header" class="header">
+      <div class="header__inner">
+        <figure class="header__logo-warapper">
+          <img
+            width="141"
+            height="50"
+            src="./dist/images/header-logo.png"
+            alt="ヘッダーのロゴマーク"
+            class="header__logo"
+          />
+        </figure>
+        <nav class="header__nav-wrapper">
+          <ul class="header__nav-items">
+            <li class="header__nav-item">
+              <a
+                id="js-nav-menu-target"
+                data-scroll
+                href="#feature"
+                class="header__nav-item-link"
+                >TSUMUGIの5つの特徴</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                id="js-nav-menu-target"
+                data-scroll
+                href="#flow"
+                class="header__nav-item-link"
+                >ご利用の流れ</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                id="js-nav-menu-target"
+                data-scroll
+                href="#use-image"
+                class="header__nav-item-link"
+                >使用イメージ</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                id="js-nav-menu-target"
+                data-scroll
+                href="#use-voice"
+                class="header__nav-item-link"
+                >利用者の声</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                id="js-nav-menu-target"
+                data-scroll
+                href="#contact"
+                class="header__nav-item-link"
+                >お問い合わせ</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- burger-btn -->
+        <div class="burger-btn__wrapper">
+          <button id="js-burger-btn" class="burger-btn">
+            <span class="burger-btn__bar"></span>
+            <span class="burger-btn__bar"></span>
+            <span class="burger-btn__bar"></span>
+          </button>
+        </div>
+        <!-- end burger-btn -->
+      </div>
+    </header>
+    <!-- ヘッダー -->
+
+    <!-- SP ナビゲーションメニュー -->
+    <div id="js-sp-nav-menu" class="sp-nav-menu-wrapper">
+      <nav class="sp-nav-menu">
+        <div class="sp-nav-menu__inner">
+          <div class="sp-nav-menu__header">MENU</div>
+          <ul class="sp-nav-manu__item-wrapper">
+            <li class="sp-nav-menu__item">
+              <a
+                id="js-nav-menu-target"
+                href="#feature"
+                class="sp-nav-menu__item-link"
+                >TSUMUGIの5つの特徴</a
+              >
+            </li>
+            <li class="sp-nav-menu__item">
+              <a
+                id="js-nav-menu-target"
+                href="#flow"
+                data-scroll
+                class="sp-nav-menu__item-link"
+                >ご利用の流れ</a
+              >
+            </li>
+            <li class="sp-nav-menu__item">
+              <a
+                id="js-nav-menu-target"
+                href="#use-image"
+                data-scroll
+                class="sp-nav-menu__item-link"
+                >使用イメージ</a
+              >
+            </li>
+            <li class="sp-nav-menu__item">
+              <a
+                id="js-nav-menu-target"
+                href="#use-voice"
+                data-scroll
+                class="sp-nav-menu__item-link"
+                >利用者の声</a
+              >
+            </li>
+            <li class="sp-nav-menu__item">
+              <a
+                id="js-nav-menu-target"
+                href="#contact"
+                data-scroll
+                class="sp-nav-menu__item-link"
+                >お問い合わせ</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- end SP ナビゲーションメニュー -->
+
+    <!-- kv -->
+    <section id="js-kv" class="section__top-kv">
+      <div class="kv__background">
+        <div class="kv__card">
+          <div class="kv__card-header-wrapper">
+            <h1 class="kv__card-header">
+              「個人が輝く」時代のパーソナルブランドブック
+            </h1>
+          </div>
+          <fiugre class="kv__card-header-logo-wrapper">
+            <img
+              width="474"
+              height="76"
+              src="./dist/images/kv-logo.png"
+              alt="メインビジュアルのロゴマーク"
+              class="kv__card-header-logo"
+            />
+          </fiugre>
+          <div class="kv__card-bottom-wrapper">
+            <p class="kv__card-bottom">
+              1人1人のモチベーションが高い組織は、それだけで強い
+            </p>
+          </div>
+        </div>
+        <div class="kv__imgs"></div>
+      </div>
+    </section>
+    <!-- end kv -->
+
+    <!-- sidetag -->
+    <div id="js-side-tag" class="side-tag-wrapper">
+      <ul class="side-tag">
+        <li class="side-tag__item -background-blue">
+          <a href="" class="side-tag__item-link">無料トライアル</a>
+        </li>
+        <li class="side-tag__item -background-purple">
+          <a href="" class="side-tag__item-link">お見積もり</a>
+        </li>
+        <li class="side-tag__item -background-red">
+          <a
+            id="js-nav-menu-target"
+            data-scroll
+            href="#contact"
+            class="side-tag__item-link"
+            >お問い合わせ</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- end sidetag -->
+
+    <!-- problem -->
+    <div class="section__top-problem-wrapper">
+      <section class="section__top-problem">
+        <div class="section__inner">
+          <div class="section__title-wrapper">
+            <span class="section__title-decoration -left"></span>
+            <h2 class="section__title">こんなお悩みありませんか？</h2>
+            <span class="section__title-decoration -right"></span>
+          </div>
+          <div class="problem">
+            <ul class="problem__boxes">
+              <li class="problem__box -speech-bubble-first -first-style">
+                <p class="problem__box-text">
+                  <span class="problem__box-text -strong">“離職率”</span>を<span
+                    class="problem__box-text -br"
+                    >低くしたい</span
+                  >
+                </p>
+              </li>
+              <li class="problem__box -speech-bubble-second -second-style">
+                <p class="problem__box-text">
+                  <span class="problem__box-text -strong"
+                    >“採用ミスマッチ”</span
+                  >
+                  <span class="problem__box-text -br">を防ぎたい</span>
+                </p>
+              </li>
+              <li class="problem__box -speech-bubble-third -third-style">
+                <p class="problem__box-text">
+                  従業員の
+                  <span class="problem__box-text -br">
+                    <span class="problem__box-text -strong"
+                      >“モチベーション”</span
+                    >
+                    を</span
+                  >
+                  <span class="problem__box-text -br"></span>
+                  高めたい
+                </p>
+              </li>
+            </ul>
+            <figure class="problem__logo-wrapper">
+              <img
+                src="./dist/images/problem.png"
+                width="1080"
+                alt="311"
+                alt="問題提起のロゴ画像"
+                class="problem__logo"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- end problem -->
+
+    <!-- solution -->
+    <div class="section__top-solution-wrapper">
+      <section class="section__top-solution">
+        <div class="section__inner">
+          <div class="section__title-wrapper">
+            <h2 class="section__title -solution">
+              <div class="section__title -solution-block -solution">
+                その悩みを（パーソナルブランドブック）
+              </div>
+              <div class="section__title -solution-block -solution">
+                <img
+                  src="./dist/images/solution.png"
+                  width="347"
+                  alt="56"
+                  alt="解決策ヘッダーのロゴ画像"
+                  class="solution__title-logo"
+                />
+                が解決します!
+              </div>
+            </h2>
+          </div>
+          <div class="solution">
+            <ul class="solution__content-boxes">
+              <div class="solution__content-upper">
+                <li class="solution__box -persent">
+                  <div class="solution__box-inner">
+                    <p class="solution__box-title">
+                      <span
+                        class="solution__box-title-sp-decoration -persent"
+                      ></span>
+                      <span class="solution__box-title-big">75</span> ％
+                    </p>
+                    <p class="solution__box-text">
+                      業界特化だからこそわかる葬儀社の抱える課題を理解
+                    </p>
+                    <span class="solution__box-text-attention"
+                      >※弊社顧客における葬儀社比率75%</span
+                    >
+                  </div>
+                </li>
+                <figure class="solution__logo-wrapper">
+                  <img
+                    src="./dist/images/solution-triangle.png"
+                    width="402"
+                    height="324"
+                    alt="解決策の内容の装飾画像"
+                    class="solution__logo"
+                  />
+                </figure>
+                <li class="solution__box -period">
+                  <div class="solution__box-inner -large">
+                    <p class="solution__box-title">
+                      <span
+                        class="solution__box-title-sp-decoration -period"
+                      ></span>
+                      <span class="solution__box-title">最短</span>
+                      <span class="solution__box-title-big">1</span>
+                      <span class="solution__box-title-midium">ヶ月</span>
+                    </p>
+                    <p class="solution__box-text">
+                      専属チームを作ってサポートをすることで、最短1か月で作成可能
+                    </p>
+                  </div>
+                </li>
+              </div>
+              <figure class="solution__logo-sp-wrapper">
+                <img
+                  src="./dist/images/solution-triangle.png"
+                  width="402"
+                  height="324"
+                  alt="解決策の内容の装飾画像"
+                  class="solution__logo-sp"
+                />
+              </figure>
+              <div class="solution__content-lower">
+                <li class="solution__box">
+                  <div class="solution__box-inner -max">
+                    <p class="solution__box-title">
+                      <span
+                        class="solution__box-title-sp-decoration -only"
+                      ></span>
+                      Only
+                      <span class="solution__box-title-big">1</span>
+                    </p>
+                    <p class="solution__box-text -text-position">
+                      「従業員一人一人」のブランディングにフォーカス
+                    </p>
+                  </div>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- end solution -->
+
+    <!-- personal-brand-book -->
+    <div class="section__top-personal-book-wrapper">
+      <section class="section__top-personal-book">
+        <div class="section__title-wrapper -personal-book">
+          <h2 class="section__title -personal-book-decoration">
+            パーソナルブランドブックとは？
+          </h2>
+        </div>
+        <div class="personal-book__staff-list-wrapper">
+          <ul class="personal-book__staff-list">
+            <li class="personal-book__staff">
+              <figure class="personal-book__staff-img-wrapper">
+                <img
+                  src="./dist/images/personal-1.jpg"
+                  width="166"
+                  height="260"
+                  alt="従業員の画像"
+                  class="personal-book__staff-img"
+                />
+              </figure>
+            </li>
+            <li class="personal-book__staff">
+              <figure class="personal-book__staff-img-wrapper">
+                <img
+                  src="./dist/images/personal-2.jpg"
+                  width="166"
+                  height="260"
+                  alt="従業員の画像"
+                  class="personal-book__staff-img"
+                />
+              </figure>
+            </li>
+            <li class="personal-book__staff">
+              <figure class="personal-book__staff-img-wrapper">
+                <img
+                  src="./dist/images/personal-3.jpg"
+                  width="166"
+                  height="260"
+                  alt="従業員の画像"
+                  class="personal-book__staff-img"
+                />
+              </figure>
+            </li>
+            <li class="personal-book__staff">
+              <figure class="personal-book__staff-img-wrapper">
+                <img
+                  src="./dist/images/personal-4.jpg"
+                  width="166"
+                  height="260"
+                  alt="従業員の画像"
+                  class="personal-book__staff-img"
+                />
+              </figure>
+            </li>
+            <li class="personal-book__staff">
+              <figure class="personal-book__staff-img-wrapper">
+                <img
+                  src="./dist/images/personal-5.jpg"
+                  width="166"
+                  height="260"
+                  alt="従業員の画像"
+                  class="personal-book__staff-img"
+                />
+              </figure>
+            </li>
+            <li class="personal-book__staff">
+              <figure class="personal-book__staff-img-wrapper">
+                <img
+                  src="./dist/images/personal-6.jpg"
+                  width="166"
+                  height="260"
+                  alt="従業員の画像"
+                  class="personal-book__staff-img"
+                />
+              </figure>
+            </li>
+            <li class="personal-book__staff">
+              <figure class="personal-book__staff-img-wrapper">
+                <img
+                  src="./dist/images/personal-7.jpg"
+                  width="166"
+                  height="260"
+                  alt="従業員の画像"
+                  class="personal-book__staff-img"
+                />
+              </figure>
+            </li>
+            <li class="personal-book__staff">
+              <figure class="personal-book__staff-img-wrapper">
+                <img
+                  src="./dist/images/personal-8.jpg"
+                  width="166"
+                  height="260"
+                  alt="従業員の画像"
+                  class="personal-book__staff-img"
+                />
+              </figure>
+            </li>
+            <li class="personal-book__staff">
+              <figure class="personal-book__staff-img-wrapper">
+                <img
+                  src="./dist/images/personal-9.jpg"
+                  width="166"
+                  height="260"
+                  alt="従業員の画像"
+                  class="personal-book__staff-img"
+                />
+              </figure>
+            </li>
+          </ul>
+        </div>
+
+        <div class="personal-book__text-box">
+          <div class="personal-book__sub-title-wrapper">
+            <span class="personal-book__sub-title-decoration-first"></span>
+
+            <h3 class="personal-book__sub-title">
+              従業員一人一人を「ブランド」化
+            </h3>
+            <span class="personal-book__sub-title-decoration-second"></span>
+          </div>
+          <div class="personal-book__text-wrapper">
+            <p class="personal-book__text">
+              寝台車に載って病院へお迎えに走る。
+              <span class="personal-book__text -br"></span>
+              お客様とお打ち合わせをし、ご葬儀の流れを確定し祭壇を作り、式場の準備をし、返礼品の用意をする。
+            </p>
+            <p class="personal-book__text">
+              言葉にするとたったこれだけのことかもしれませんが、そこに携わるスタッフは一人一人が「想い」を持って仕事をしています。
+              <span class="personal-book__text -br"></span>
+              その想いを表現してあげることで、その想いはお客様に伝わり、それがお客様のファン化につながり、
+              <span class="personal-book__text -br"></span>
+              そしてそれは従業員のモチベーションの向上にもつながります。
+            </p>
+            <p class="personal-book__text">
+              専門のインタビュアーが貴社の従業員一人一人をインタビュー、そしてライターがその話をストーリー化し、
+              <span class="personal-book__text -br"></span>
+              従業員一人一人を輝かせるパーソナルブランドブックを作り上げます。
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- end personal-brand-book -->
+
+    <!-- feature -->
+    <section id="feature" class="section__top-feature">
+      <div class="section__inner">
+        <h2 class="section__title">TSUMUGIの5つの特徴</h2>
+        <div class="feature">
+          <ul class="feature__cards">
+            <li class="feature__card">
+              <figure class="feature__img-wrapper">
+                <img
+                  src="./dist/images/feature-1.jpg"
+                  width="518"
+                  height="251"
+                  alt="特徴1の画像"
+                  class="feature__img"
+                />
+              </figure>
+              <div class="feature__text-content-wrapper -ml">
+                <div class="feature__text-content">
+                  <h3 class="feature__text-header">
+                    <span class="feature__text-header-decoration">
+                      <span class="feature__text-header-decoration-text"
+                        >特徴</span
+                      >
+                      <span class="feature__text-header-decoration-number"
+                        >1</span
+                      >
+                    </span>
+                    「個人」ブランディングによる <br />
+                    「商品差別化」を実現
+                  </h3>
+                  <p class="feature__text">
+                    葬儀業界において最終的な差別化となるものが「人」です。その人をブランディングすることによって価値を上げることは、特に中小企業に大きな差別化の武器となります。
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="feature__card">
+              <figure class="feature__img-wrapper">
+                <img
+                  src="./dist/images/feature-2.jpg"
+                  width="518"
+                  height="251"
+                  alt="特徴2の画像"
+                  class="feature__img"
+                />
+              </figure>
+              <div class="feature__text-content-wrapper -mr">
+                <div class="feature__text-content">
+                  <h3 class="feature__text-header">
+                    <span class="feature__text-header-decoration">
+                      <span class="feature__text-header-decoration-text"
+                        >特徴</span
+                      >
+                      <span class="feature__text-header-decoration-number"
+                        >2</span
+                      >
+                    </span>
+                    専門インタビュー＆ライティングチーム<br />
+                    による品質管理
+                  </h3>
+                  <p class="feature__text">
+                    インタビューレベル、そのインタビューに基づくライティングのレベルを高品質で保つために、つむぎ㈱ではコーチング経験、編集・ライティング経験を持つメンバーによる専属のチームを作っています。
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="feature__card">
+              <figure class="feature__img-wrapper">
+                <img
+                  src="./dist/images/feature-3.jpg"
+                  width="518"
+                  height="251"
+                  alt="特徴3の画像"
+                  class="feature__img"
+                />
+              </figure>
+              <div class="feature__text-content-wrapper -ml">
+                <div class="feature__text-content">
+                  <h3 class="feature__text-header">
+                    <span class="feature__text-header-decoration">
+                      <span class="feature__text-header-decoration-text"
+                        >特徴</span
+                      >
+                      <span class="feature__text-header-decoration-number"
+                        >3</span
+                      >
+                    </span>
+                    一人一人の原体験をベースにした<br />
+                    オリジナルストーリー化
+                  </h3>
+                  <p class="feature__text">
+                    単にお客様に向けたメッセージではなく、一人一人の原体験にフォーカスし、今の仕事につなげるオリジナルのストーリーを作ります。第3者インタビュアーだからこそ、様々なお話を聞くことが可能です。
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="feature__card">
+              <figure class="feature__img-wrapper">
+                <img
+                  src="./dist/images/feature-4.jpg"
+                  width="518"
+                  height="251"
+                  alt="特徴4の画像"
+                  class="feature__img"
+                />
+              </figure>
+              <div class="feature__text-content-wrapper -mr">
+                <div class="feature__text-content">
+                  <h3 class="feature__text-header">
+                    <span class="feature__text-header-decoration">
+                      <span class="feature__text-header-decoration-text"
+                        >特徴</span
+                      >
+                      <span class="feature__text-header-decoration-number"
+                        >4</span
+                      >
+                    </span>
+                    企業のリクルーティング力向上に直結
+                  </h3>
+                  <p class="feature__text">
+                    経営者へのインタビュー、そして社員へのインタビュー内容は、そのままリクルーティングに活かすことができます。自社サイトや外部採用媒体、説明会資料に活用することで、一気に貴社の採用レベルが向上します。
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="feature__card">
+              <figure class="feature__img-wrapper">
+                <img
+                  src="./dist/images/feature-5.jpg"
+                  width="518"
+                  height="251"
+                  alt="特徴5の画像"
+                  class="feature__img"
+                />
+              </figure>
+              <div class="feature__text-content-wrapper -ml">
+                <div class="feature__text-content">
+                  <h3 class="feature__text-header">
+                    <span class="feature__text-header-decoration">
+                      <span class="feature__text-header-decoration-text"
+                        >特徴</span
+                      >
+                      <span class="feature__text-header-decoration-number"
+                        >5</span
+                      >
+                    </span>
+                    人と組織の強化ポイントが即時にわかる
+                  </h3>
+                  <p class="feature__text">
+                    社員に対して同じ形でヒアリングを行うことで、「現在の採用力」「仕事へのやりがい」「理念浸透力」が即時にわかります。ヒアリングを通じて、より良い会社に成長させるためにやるべきことが明確になります。
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- end feature  -->
+
+    <!-- use image -->
+    <div id="use-image" class="section__top-use-image-wrapper">
+      <div class="section__top-use-image-mask"></div>
+      <section class="section__top-use-image">
+        <div class="section__inner">
+          <div class="section__title-wrapper">
+            <span class="section__title-decoration -left"></span>
+            <h2 class="section__title -small">
+              パーソナルブランドブック
+              <span class="use-image__title-sp-br"></span>
+              <img
+                src="./dist/images/use-image-logo.png"
+                width="281"
+                height="45"
+                alt="使用イメージのヘッダーのロゴ画像"
+                class="use-image__title-logo"
+              />
+              使用イメージ
+            </h2>
+            <span class="section__title-decoration -right"></span>
+          </div>
+
+          <ul class="use-image">
+            <li class="use-image__box">
+              <h3 class="use-image__header">紹介率UP</h3>
+              <figure class="use-image__img-wrapper">
+                <img
+                  src="./dist/images/image-1.jpg"
+                  width="520"
+                  height="280"
+                  alt="イメージ画像1"
+                  class="use-image__img"
+                />
+              </figure>
+              <p class="use-image__text">施行後に携わったスタッフ分を配布</p>
+            </li>
+            <li class="use-image__box">
+              <h3 class="use-image__header">入会率UP</h3>
+              <figure class="use-image__img-wrapper">
+                <img
+                  src="./dist/images/image-2.jpg"
+                  width="520"
+                  height="280"
+                  alt="イメージ画像2"
+                  class="use-image__img"
+                />
+              </figure>
+              <p class="use-image__text">事前相談・資料請求時</p>
+            </li>
+            <li class="use-image__box">
+              <h3 class="use-image__header">反響率UP</h3>
+              <figure class="use-image__img-wrapper">
+                <img
+                  src="./dist/images/image-3.jpg"
+                  width="520"
+                  height="280"
+                  alt="イメージ画像3"
+                  class="use-image__img"
+                />
+              </figure>
+              <p class="use-image__text">ポスティング時配布</p>
+            </li>
+            <li class="use-image__box">
+              <h3 class="use-image__header">採用力UP</h3>
+              <figure class="use-image__img-wrapper">
+                <img
+                  src="./dist/images/image-4.jpg"
+                  width="520"
+                  height="280"
+                  alt="イメージ画像4"
+                  class="use-image__img"
+                />
+              </figure>
+              <p class="use-image__text">WEBへの掲載</p>
+            </li>
+            <li class="use-image__box">
+              <h3 class="use-image__header">会葬者訴求力UP</h3>
+              <figure class="use-image__img-wrapper">
+                <img
+                  src="./dist/images/image-5.jpg"
+                  width="520"
+                  height="280"
+                  alt="イメージ画像5"
+                  class="use-image__img"
+                />
+              </figure>
+              <p class="use-image__text">ホール・控室設置</p>
+            </li>
+            <li class="use-image__box">
+              <h3 class="use-image__header">離職率DOWN</h3>
+              <figure class="use-image__img-wrapper">
+                <img
+                  src="./dist/images/image-6.jpg"
+                  width="520"
+                  height="280"
+                  alt="イメージ画像6"
+                  class="use-image__img"
+                />
+              </figure>
+              <p class="use-image__text">社員の家族とのエンゲージメント</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <!-- end use image -->
+
+    <!-- use voice -->
+    <div id="use-voice" class="section__top-use-voice-wrapper">
+      <section class="section__top-use-voice">
+        <div class="section__inner">
+          <h2 class="section__title">パーソナルブランドブック利用者の声</h2>
+          <ul class="use-voice">
+            <li class="use-voice__card">
+              <div class="use-voice__card-inner">
+                <div class="use-voice__cohesive">
+                  <figure class="use-voice__video-wrapper">
+                    <video
+                      src="./src/videos/14884852_MotionElements_particle-background-loop-hd.mp4"
+                      class="use-voice__video"
+                    ></video>
+                  </figure>
+                  <p class="use-voive__text">
+                    会社の理念を改めて見直してく際に、やっぱり働く一人一人に夢があったり、目標があったり、希望があったりして、うちの会社に来て働いているんだよなということに気付き、一人一人の夢ややりがいを見える化してあげることで、お客さまにもその想いを知ってもらいたいと思って作りました。実際に作ってみると、私も知らなかったような話が多く知る事が出来ました。組織を考える上でのヒントにもなりまし、従業員とのコミュニケーションツールにもなりましたね。ポスティングに行っているメンバーも一生懸命配ってて、あっという間になくなってしまいました。人って持つ武器が変わると本当に表現力や行動が変わるんだなと思いますね。施行後にスタッフ分の冊子をお渡ししているのはもちろんですが、意外だったのが、スタッフの親御さんに喜ばれたことです。「いい会社に入ったね～」と言われることもあり、家族からの応援を頂けるようになりました。これだけでも作ってよかったと思いましたね。
+                  </p>
+                </div>
+                <span class="use-voice__user"
+                  >株式会社みつわ 代表取締役 篠原耕一 様</span
+                >
+              </div>
+            </li>
+            <li class="use-voice__card">
+              <div class="use-voice__card-inner">
+                <div class="use-voice__cohesive">
+                  <figure class="use-voice__video-wrapper">
+                    <video
+                      src="./src/videos/14884852_MotionElements_particle-background-loop-hd.mp4"
+                      class="use-voice__video"
+                    ></video>
+                  </figure>
+                  <p class="use-voive__text">
+                    会社の理念を改めて見直してく際に、やっぱり働く一人一人に夢があったり、目標があったり、希望があったりして、うちの会社に来て働いているんだよなということに気付き、一人一人の夢ややりがいを見える化してあげることで、お客さまにもその想いを知ってもらいたいと思って作りました。実際に作ってみると、私も知らなかったような話が多く知る事が出来ました。組織を考える上でのヒントにもなりまし、従業員とのコミュニケーションツールにもなりましたね。ポスティングに行っているメンバーも一生懸命配ってて、あっという間になくなってしまいました。人って持つ武器が変わると本当に表現力や行動が変わるんだなと思いますね。施行後にスタッフ分の冊子をお渡ししているのはもちろんですが、意外だったのが、スタッフの親御さんに喜ばれたことです。「いい会社に入ったね～」と言われることもあり、家族からの応援を頂けるようになりました。これだけでも作ってよかったと思いましたね。
+                  </p>
+                </div>
+                <span class="use-voice__user"
+                  >都島葬祭 代表取締役 〇〇〇〇 様</span
+                >
+              </div>
+            </li>
+            <li class="use-voice__card">
+              <div class="use-voice__card-inner">
+                <div class="use-voice__cohesive">
+                  <figure class="use-voice__video-wrapper">
+                    <video
+                      src="./src/videos/14884852_MotionElements_particle-background-loop-hd.mp4"
+                      class="use-voice__video"
+                    ></video>
+                  </figure>
+                  <p class="use-voive__text">
+                    会社の理念を改めて見直してく際に、やっぱり働く一人一人に夢があったり、目標があったり、希望があったりして、うちの会社に来て働いているんだよなということに気付き、一人一人の夢ややりがいを見える化してあげることで、お客さまにもその想いを知ってもらいたいと思って作りました。実際に作ってみると、私も知らなかったような話が多く知る事が出来ました。組織を考える上でのヒントにもなりまし、従業員とのコミュニケーションツールにもなりましたね。ポスティングに行っているメンバーも一生懸命配ってて、あっという間になくなってしまいました。人って持つ武器が変わると本当に表現力や行動が変わるんだなと思いますね。施行後にスタッフ分の冊子をお渡ししているのはもちろんですが、意外だったのが、スタッフの親御さんに喜ばれたことです。「いい会社に入ったね～」と言われることもあり、家族からの応援を頂けるようになりました。これだけでも作ってよかったと思いましたね。
+                  </p>
+                </div>
+                <span class="use-voice__user"
+                  >北神社 代表取締役 〇〇〇〇 様</span
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <!-- end use voice -->
+
+    <!-- staff voice -->
+    <section class="section__top-staff-voive">
+      <div class="section__inner">
+        <div class="section__title-wrapper">
+          <span class="section__title-decoration -left"></span>
+          <h2 class="section__title">スタッフの声</h2>
+          <span class="section__title-decoration -right"></span>
+        </div>
+
+        <ul class="staff-voice__pictures">
+          <li class="staff-voice__picture">
+            <figure class="staff-voice__img-wrapper">
+              <img
+                src="./dist/images/staff-1.jpg"
+                width="239"
+                height="200"
+                alt="従業員の画像"
+                class="staff-voice__img"
+              />
+            </figure>
+          </li>
+          <li class="staff-voice__picture">
+            <figure class="staff-voice__img-wrapper">
+              <img
+                src="./dist/images/staff-2.jpg"
+                width="488"
+                height="200"
+                alt="従業員の画像"
+                class="staff-voice__img"
+              />
+            </figure>
+          </li>
+          <li class="staff-voice__picture">
+            <figure class="staff-voice__img-wrapper">
+              <img
+                src="./dist/images/staff-3.jpg"
+                width="348"
+                height="200"
+                alt="従業員の画像"
+                class="staff-voice__img"
+              />
+            </figure>
+          </li>
+        </ul>
+
+        <ul class="staff-voice__boxes">
+          <div class="staff-voice__boxes-large">
+            <li class="staff-voice__box -large">
+              <div class="staff-voice__box__inner">
+                <h3 class="staff-voice__header">
+                  スタッフの声
+                  <span class="staff-voice__header-decoration">1</span>
+                </h3>
+                <p class="staff-voice__text">
+                  事前相談時や引き出物の中に入れたりしています。ホールを見ていると冊子を手に取って、読んでくれているお客さまも多いですね。私たちのことを知ってもらうツールとしてはとてもいいと思っています。また中途社員で入ってこられた人には、これらを読んでもらうことで一気に社員のことを知ってもらえるので、メンバー間のコミュニケーションツールにもなります。
+                </p>
+              </div>
+            </li>
+            <li class="staff-voice__box -large">
+              <div class="staff-voice__box__inner">
+                <h3 class="staff-voice__header">
+                  スタッフの声
+                  <span class="staff-voice__header-decoration">2</span>
+                </h3>
+                <p class="staff-voice__text">
+                  見学に来た人や会葬者、イベントに来た人などが、冊子を見た後に声をかけてくれたりします。ちょっと恥ずかしいですが、話すきっかけを作ることはできていますね。私はしっかりと想いを言葉にするのがあまり得意じゃないのですが、このように文字になっているとしっかりと伝える事が出来るので良いと思います。
+                </p>
+              </div>
+            </li>
+            <li class="staff-voice__box -large">
+              <div class="staff-voice__box__inner">
+                <h3 class="staff-voice__header">
+                  スタッフの声
+                  <span class="staff-voice__header-decoration">3</span>
+                </h3>
+                <p class="staff-voice__text">
+                  自分を知ってもらえるツールとしてやってもらって本当に良かったと思っています。それをお客様に渡せますし、お客様と近くなりたいのですごく助かっています。またお寺さんに挨拶に行く際には、お渡ししていました。⾧くお時間を取れない際に、私の人となりを伝えられるのでとても良かったですね。
+                </p>
+              </div>
+            </li>
+          </div>
+          <div class="staff-voice__boxes-small">
+            <li class="staff-voice__box -small">
+              <div class="staff-voice__box__inner">
+                <h3 class="staff-voice__header">
+                  スタッフの声
+                  <span class="staff-voice__header-decoration">4</span>
+                </h3>
+                <p class="staff-voice__text">
+                  私の父親が警察官であったという話をパーソナルブランドブックを見てくれてお客様から声をかけてもらうこともある。そうやってコミュニケーションが生まれることはすごい。また自分の想いがカタチになったツールを見て、頑張るぞという思いが沸いてきた。
+                </p>
+              </div>
+            </li>
+            <li class="staff-voice__box -small">
+              <div class="staff-voice__box__inner">
+                <h3 class="staff-voice__header">
+                  スタッフの声
+                  <span class="staff-voice__header-decoration">5</span>
+                </h3>
+                <p class="staff-voice__text">
+                  同僚のパーソナルブランドブックを読んで、本人のことを初めて知ることもある。読み込んでしまい涙してしまうこともあった。
+                </p>
+              </div>
+            </li>
+            <li class="staff-voice__box -small">
+              <div class="staff-voice__box__inner">
+                <h3 class="staff-voice__header">
+                  スタッフの声
+                  <span class="staff-voice__header-decoration">6</span>
+                </h3>
+                <p class="staff-voice__text">
+                  会館ご安置をしている際に、お待ちいただいている時に読んでいただいていることがある。どんな会社で、どんな人が担当するのか、その部分が先に伝わるので、安心感につながっていると思う。
+                </p>
+              </div>
+            </li>
+            <li class="staff-voice__box -small">
+              <div class="staff-voice__box__inner">
+                <h3 class="staff-voice__header">
+                  スタッフの声
+                  <span class="staff-voice__header-decoration">7</span>
+                </h3>
+                <p class="staff-voice__text">
+                  事前相談の際に必ずお渡ししている。このようなツールは見たことがないので、お客様は「へぇ～」という反応をもらえる。会館で全員分並んでいるので、お客様はよく読んでくれていますね。
+                </p>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </section>
+    <!-- end staff voice -->
+
+    <!-- flow -->
+    <div id="flow" class="section__top-flow-wrapper">
+      <div class="section__top-flow-mask"></div>
+      <section class="section__top-flow">
+        <div class="section__inner">
+          <div class="section__title-flow-wrapper">
+            <span class="section__title-flow-decoration-first"></span>
+            <h2 class="section__title -white -flow">ご利用の流れ</h2>
+            <span class="section__title-flow-decoration-second"></span>
+          </div>
+          <ul class="flow__content-boxes">
+            <li class="flow__box -decoration">
+              <div class="flow__box-inner">
+                <figure class="flow__img-wrapper -decoration">
+                  <img
+                    src="./dist/images/flow-1.png"
+                    width="240"
+                    height="240"
+                    alt="使用の流れのロゴ画像"
+                    class="flow__img"
+                  />
+                </figure>
+                <h3 class="flow__header">お問い合わせ</h3>
+                <p class="flow__text">
+                  テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                </p>
+              </div>
+            </li>
+            <li class="flow__box">
+              <div class="flow__box-inner">
+                <figure class="flow__img-wrapper -decoration">
+                  <img
+                    src="./dist/images/flow-2.png"
+                    width="240"
+                    height="240"
+                    alt="使用の流れのロゴ画像"
+                    class="flow__img"
+                  />
+                </figure>
+                <h3 class="flow__header">オンラインMTG</h3>
+                <p class="flow__text">
+                  テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                </p>
+              </div>
+            </li>
+            <li class="flow__box">
+              <div class="flow__box-inner">
+                <figure class="flow__img-wrapper -decoration">
+                  <img
+                    src="./dist/images/flow-re-3.png"
+                    width="240"
+                    height="240"
+                    alt="使用の流れのロゴ画像"
+                    class="flow__img"
+                  />
+                </figure>
+                <h3 class="flow__header">ご契約</h3>
+                <p class="flow__text">
+                  テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                </p>
+              </div>
+            </li>
+            <li class="flow__box">
+              <div class="flow__box-inner">
+                <figure class="flow__img-wrapper">
+                  <img
+                    src="./dist/images/flow-4.png"
+                    width="240"
+                    height="240"
+                    alt="使用の流れのロゴ画像"
+                    class="flow__img"
+                  />
+                </figure>
+                <h3 class="flow__header">………</h3>
+                <p class="flow__text">
+                  テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <!-- end flow -->
+
+    <!-- download -->
+    <div class="download-wrapper">
+      <div class="download">
+        <div class="download__img-wrapper">
+          <img
+            src="./dist/images/personal-book-sample.png"
+            width="927"
+            height="293"
+            alt="サンプルの背景画像"
+            class="download__background-img"
+          />
+          <figure class="download__sample-img-wrapper">
+            <img
+              src="./dist/images/personal-book-sample-2.png"
+              width="492"
+              height="264"
+              alt="サンプル資料の画像"
+              class="download__sample-img"
+            />
+          </figure>
+        </div>
+
+        <div class="download__content-box">
+          <p class="download__text">パーソナルブランドブック</p>
+          <p class="download__text -large">サンプル配信中</p>
+          <div class="download__btn-wrapper">
+            <a href="" class="download__btn">無料ダウンロード</a>
+          </div>
+          <span class="download__attention-text"
+            >※競合はお断りさせて頂きます</span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- end download -->
+
+    <!-- contact -->
+    <div id="contact" class="section__top-contact">
+      <div class="section__inner">
+        <h2 class="section__title">お問い合わせ</h2>
+        <div class="contact-wrapper">
+          <form action="" class="contact">
+            <div class="contact__form-wrapper">
+              <div class="contact__label-wrapper">
+                <label for="" class="contact-label">御社名</label>
+                <span class="contact__tag">必須</span>
+              </div>
+              <div class="contact__input-wrapper">
+                <input
+                  type="text"
+                  class="contact__input -company-name"
+                  placeholder="例）つむぎ株式会社"
+                />
+              </div>
+            </div>
+            <div class="contact__form-wrapper">
+              <div class="contact__label-wrapper">
+                <label for="" class="contact-label">部署名</label>
+              </div>
+              <div class="contact__input-wrapper">
+                <input
+                  type="text"
+                  class="contact__input -department"
+                  placeholder="例）第一営業部"
+                />
+              </div>
+            </div>
+            <div class="contact__form-wrapper">
+              <div class="contact__label-wrapper">
+                <label for="" class="contact-label">お名前</label>
+                <span class="contact__tag">必須</span>
+              </div>
+              <div class="contact__input-wrapper">
+                <input
+                  type="text"
+                  class="contact__input -name"
+                  placeholder="例）山田太郎"
+                />
+              </div>
+            </div>
+            <div class="contact__form-wrapper">
+              <div class="contact__label-wrapper">
+                <label for="" class="contact-label">E-mail</label>
+                <span class="contact__tag">必須</span>
+              </div>
+              <div class="contact__input-wrapper">
+                <input
+                  type="text"
+                  class="contact__input -email"
+                  placeholder="例）contact@sample.co.jp"
+                />
+              </div>
+            </div>
+            <div class="contact__form-wrapper">
+              <div class="contact__label-wrapper">
+                <label for="" class="contact-label">電話番号</label>
+                <span class="contact__tag">必須</span>
+              </div>
+              <div class="contact__input-wrapper">
+                <input
+                  type="text"
+                  class="contact__input -tell"
+                  placeholder="例）03-1234-5678"
+                />
+              </div>
+            </div>
+            <div class="contact__form-wrapper">
+              <div class="contact__label-wrapper">
+                <label for="" class="contact-label">お問い合わせ内容</label>
+                <span class="contact__tag">必須</span>
+              </div>
+              <div class="contact__input-select-wrapper">
+                <div class="contact__input-select-inner">
+                  <select class="contact__input-select" name="content">
+                    <option value="" hidden>選択してください</option>
+                    <option value="A">〇〇について</option>
+                    <option value="B">〇〇について</option>
+                    <option value="O">採用について</option>
+                    <option value="AB">その他</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="contact__form-wrapper">
+              <div class="contact__label-wrapper -textarea">
+                <label for="" class="contact-label">ご質問・ご相談内容</label>
+                <span class="contact__tag">必須</span>
+              </div>
+              <div class="contact__input-wrapper">
+                <textarea
+                  name=""
+                  cols="10"
+                  rows="5"
+                  class="contact__input-textarea"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="contact__privacy-protection">
+              <div class="contact__privacy-protection__check-wrapper">
+                <input
+                  id="contact-privacy"
+                  type="checkbox"
+                  class="contact__privacy-protection__check"
+                />
+                <label
+                  for="contact-privacy"
+                  class="contact__privacy-protection__check-label"
+                >
+                  <span class="contact__privacy-protection__check-text"
+                    >個人情報保護方針に同意する
+                  </span>
+                </label>
+              </div>
+              <div class="contact__privacy-protection-content-wrapper">
+                <a href="" class="contact__privacy-protection-content"
+                  >個人情報保護方針の内容はこちら</a
+                >
+              </div>
+            </div>
+            <div class="contact__btn-wrapper">
+              <button class="contact__btn" type="submit">送信する</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end contact -->
+
+    <!-- download -->
+    <div class="download-wrapper">
+      <div class="download">
+        <div class="download__img-wrapper">
+          <img
+            src="./dist/images/personal-book-sample.png"
+            width="927"
+            height="293"
+            alt="サンプルの背景画像"
+            class="download__background-img"
+          />
+          <figure class="download__sample-img-wrapper">
+            <img
+              src="./dist/images/personal-book-sample-2.png"
+              width="492"
+              height="264"
+              alt="サンプル資料の画像"
+              class="download__sample-img"
+            />
+          </figure>
+        </div>
+
+        <div class="download__content-box">
+          <p class="download__text">パーソナルブランドブック</p>
+          <p class="download__text -large">サンプル配信中</p>
+          <div class="download__btn-wrapper">
+            <button class="download__btn">無料ダウンロード</button>
+          </div>
+          <span class="download__attention-text"
+            >※競合はお断りさせて頂きます</span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- end download -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- smooth-scroll -->
+    <script src="./dist/plugins/smooth-scroll.js"></script>
+    <script src="./dist/plugins/smooth-scroll-polyfills.js"></script>
     <script src="./dist/js/app.min.js"></script>
   </body>
 </html>

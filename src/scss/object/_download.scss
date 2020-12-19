@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+.download__img-wrapper {
+  position: relative;
+  width: 51%;
+}
+.download__sample-img-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 39%;
+}
+
+.download__sample-img {
+  width: 394px;
+  width: clamp(200px, convertVw(493, 1920), 493px);
+  height: auto;
+  display: block;
+}
+
+.download__background-img {
+  width: clamp(500px, convertVw(927, 1920), 927px);
+  height: 100%;
+}
+
+.download {
+  position: relative;
+  display: flex;
+  padding-left: 51px;
+  padding-left: clamp(51px, convertVw(64, 1920), 64px);
+
+  background-color: #647d8c;
+}
+
+.download__content-box {
+  display: flex;
+  flex-direction: column;
+  padding: 38px 0 35px;
+  z-index: $z-index-m;
+}
+
+.download__text {
+  font-size: 3.2rem;
+  font-size: clamp(3.2rem, convertVw(40, 1920), 4rem);
+  color: #fff;
+  text-align: center;
+  margin-bottom: 8px;
+
+  &.-large {
+    font-size: 4.5rem;
+    font-size: clamp(3.6rem, convertVw(45, 1920), 4.5rem);
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+}
+
+.download__btn {
+  font-size: 2rem;
+  font-size: clamp(2rem, convertVw(25, 1920), 2.5rem);
+  color: #fff;
+  font-weight: bold;
+  padding: 18px 10px 20px 10px;
+  padding: clamp(14.4px, convertVw(18, 1920), 18px)
+    clamp(8px, convertVw(10, 1920), 10px) clamp(16px, convertVw(20, 1920), 20px)
+    clamp(8px, convertVw(10, 1920), 10px);
+  box-sizing: border-box;
+  background-color: #ef9816;
+  border-radius: 6px;
+  width: 100%;
+  text-align: center;
+  display: block;
+
+  &:hover {
+    opacity: 0.7s;
+  }
+}
+
+.download__attention-text {
+  font-size: 1.6rem;
+  font-size: clamp(1.6rem, convertVw(20, 1920), 2rem);
+  color: #fff;
+  text-align: center;
+  margin-top: 11px;
+}
+
+//------------------------------------------
+//1500px以下
+//------------------------------------------
+
+// 画像とテキストの重なりを防ぐ為に、レイアウトや余白の変更
+@media screen and (max-width: 1500px) {
+  .download {
+    justify-content: space-around;
+    padding-right: clamp(80px, convertVw(100, 1500), 100px);
+    padding-left: clamp(40px, convertVw(50, 1500), 50px);
+  }
+}
+
+@media screen and (max-width: $tablet-window-size) {
+  .download {
+    padding: 0 10px 0 0;
+  }
+  .download__text {
+    font-size: clamp(1rem, convertVw(32, 1110), 3.2rem);
+    color: #fff;
+    text-align: center;
+    margin-bottom: 6px;
+
+    &.-large {
+      font-size: clamp(1.4rem, convertVw(36, 1110), 3.6rem);
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+  }
+
+  .download__btn {
+    font-size: clamp(1rem, convertVw(20, 1110), 2rem);
+    padding: clamp(9.8px, convertVw(14.4, 1920), 14.4px)
+      clamp(6px, convertVw(8, 1920), 8px) clamp(11px, convertVw(16, 1920), 16px)
+      clamp(6px, convertVw(8, 1920), 8px);
+  }
+
+  .download__background-img {
+    width: clamp(250px, convertVw(500, 1110), 500px);
+  }
+
+  .download__content-box {
+    padding: 15px 0 10px;
+  }
+
+  .download__attention-text {
+    font-size: clamp(7px, convertVw(16, 1110), 1.6rem);
+  }
+}

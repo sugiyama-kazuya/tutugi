@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+.use-image__title-logo {
+  object-fit: cover;
+}
+
+.use-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 72px;
+}
+
+.use-image__box {
+  width: calc(100% / 2 - 20);
+  position: relative;
+  margin-bottom: 83.5px;
+}
+
+.use-image__header {
+  position: absolute;
+  top: -8%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: clamp(2.2rem, convertVw(28, 1920), 2.8rem);
+  padding: 12px 10px;
+  width: 264px;
+  text-align: center;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #3a9fad;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: skew(-20deg);
+  }
+}
+
+.use-image__text {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: #2b3237;
+  opacity: 0.85;
+  width: 100%;
+  color: #fff;
+  font-size: 1.2rem;
+  font-size: clamp(1.2rem, convertVw(19, 1920), 1.9rem);
+  font-weight: 900;
+  padding: 12px;
+}
+
+@media screen and (max-width: $tablet-window-size) {
+  .use-image__title-logo {
+    width: 190px;
+    width: clamp(100px, convertVw(250, 1110), 281px);
+    margin: 0 5px;
+  }
+
+  .use-image {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .use-image__box {
+    width: 70%;
+  }
+
+  .use-image__img-wrapper {
+    width: 100%;
+  }
+  .use-image__img {
+    width: 100%;
+  }
+
+  .use-image__header {
+    top: -6%;
+    font-size: clamp(2.2rem, convertVw(28, 1110), 2.8rem);
+    padding: 12px 10px;
+    width: 264px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: $sp-window-size) {
+  .use-image__title-sp-br {
+    &:before {
+      content: "\A";
+      white-space: pre;
+    }
+  }
+
+  .use-image {
+    margin-top: 70px;
+  }
+
+  .use-image__box {
+    width: 90%;
+    margin-bottom: 50px;
+    margin-bottom: clamp(40px, convertVw(70, 767), 70px);
+  }
+
+  .use-image__header {
+    font-size: 1.4rem;
+    padding: clamp(9px, convertVw(12, 767), 12px)
+      clamp(7px, convertVw(10, 767), 10px);
+    font-size: clamp(1.4rem, convertVw(22, 767), 2.8rem);
+    width: clamp(150px, convertVw(242, 767), 193px);
+    top: -7%;
+  }
+
+  .use-image__text {
+    font-size: 1.5rem;
+    font-size: clamp(1.2rem, convertVw(19, 1920), 1.9rem);
+  }
+}
