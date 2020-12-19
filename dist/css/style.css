@@ -1715,8 +1715,9 @@ body.-sp-nav-menu-active {
       margin-bottom: 15px; } }
 
 .use-image__title-logo {
-  -o-object-fit: cover;
-     object-fit: cover; }
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: auto; }
 
 .use-image {
   display: flex;
@@ -1769,7 +1770,8 @@ body.-sp-nav-menu-active {
   .use-image__title-logo {
     width: 190px;
     width: clamp(100px, 22.52252vw, 281px);
-    margin: 0 5px; }
+    margin: 0 5px;
+    height: auto; }
   .use-image {
     flex-direction: column;
     align-items: center; }
