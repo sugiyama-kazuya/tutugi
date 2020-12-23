@@ -78,7 +78,6 @@ window.onload = function () {
           navMenu.classList.remove("-active");
           body.classList.remove("-sp-nav-menu-active");
           header.classList.remove("-sp-nav-menu-actice");
-
           document.removeEventListener("mousewheel", onScroll, {
             passive: false,
           });

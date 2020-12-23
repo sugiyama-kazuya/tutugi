@@ -121,7 +121,7 @@
     position: static;
     width: 90%;
     padding: 14px;
-    padding: clamp(14, convertVw(28, 776), 14px);
+    padding: clamp(14px, convertVw(28, 776), 14px);
     box-sizing: border-box;
     transform: translateY(0%);
     margin-bottom: 14px;
